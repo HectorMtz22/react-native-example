@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Constants from "expo-constants";
+import theme from "../../theme";
 
 export const Header = () => {
   return (
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
     marginTop: Constants.statusBarHeight,
     paddingVertical: 5,
     paddingHorizontal: 30,
-    backgroundColor: "#000",
+    backgroundColor: theme.colors.primary,
   },
   text: {
     fontSize: 20,
