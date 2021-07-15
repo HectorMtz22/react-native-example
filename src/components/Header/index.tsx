@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.primary,
   },
   text: {
-    fontSize: 20,
+    fontSize: theme.fontSizes.title,
     color: "#fff",
   },
 });

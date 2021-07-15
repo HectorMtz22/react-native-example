@@ -8,6 +8,8 @@ const theme = {
   },
   fontSizes: {
     body: 12,
+    title: 28,
+    subtitle: 20,
   },
 };
 
