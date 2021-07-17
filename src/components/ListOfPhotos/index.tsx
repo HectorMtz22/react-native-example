@@ -1,33 +1,12 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 import theme from "../../theme";
+import PhotoCards from "../PhotoCards";
 
 const ListOfPhotos = () => {
   return (
-    <View style={styles.card}>
-      <Text style={styles.text}>Mira</Text>
-      <Image
-        style={styles.img}
-        source={{
-          uri: "https://www.syntonize.com/wp-content/uploads/2020/10/Flutter-vs-React-2.png",
-        }}
-      />
-    </View>
+    <FlatList data={[0, 1, 2, 3, 4]} renderItem={(item) => <PhotoCards />} />
   );
 };
-
-const styles = StyleSheet.create({
-  img: {
-    height: 200,
-    borderRadius: 10,
-  },
-  text: {
-    fontSize: theme.fontSizes.subtitle,
-  },
-  card: {
-    marginHorizontal: 5,
-    borderRadius: 10,
-  },
-});
 
 export default ListOfPhotos;
